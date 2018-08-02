@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/springboot
+    username: root
+    password: admin
+
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    timeout: 3000
+#    pool:
+#      max-idle: 500
+#      min-idle: 50
+#      max-active: 2000
+#      max-wait: 1000
+  jpa:
+    hibernate:
+      ddl-auto: update
+#    show-sql: true       #SQL显示
+
+server:
+  port: 8081
