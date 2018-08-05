@@ -44,10 +44,6 @@ public class RedisConfig /*extends CachingConfigurerSupport*/ {
         template.setValueSerializer(serializer);
         template.setKeySerializer(new StringRedisSerializer());
         template.afterPropertiesSet();
-
-//        RedisSerializer<String> redisSerializer = new StringRedisSerializer();// Long类型不可以会出现异常信息;
-//        template.setKeySerializer(redisSerializer);
-//        template.setHashKeySerializer(redisSerializer);
         return template;
     }
 
